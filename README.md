@@ -46,4 +46,5 @@ system msg for write_line failure : Bad file descriptor
 ___________________________________________ROHIT-----------------------------------
 
 Rohit: Can you try with projection 1 in green.inp file, someone suggested projection 1, its related to the type of basis set chosen for the calculation.
+
 Raj: Thanks! Changing the value of `projection` to `1` made it work. 
