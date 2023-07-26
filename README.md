@@ -42,3 +42,7 @@ application called MPI_Abort(MPI_COMM_WORLD, 1) - process 0
 :
 system msg for write_line failure : Bad file descriptor
 ```
+
+___________________________________________ROHIT-----------------------------------
+
+Can you try with projection 1 in green.inp file, someone suggested projection 1, its related to the type of basis set chosen for the calculation.
