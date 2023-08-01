@@ -1,0 +1,13 @@
+I followed the following video. https://www.youtube.com/watch?v=xhi7lpmBJeE
+We need to sample the entire BZ for Jij calculations, so the symcof file needs to be modified.
+
+cd bz
+cp ../symcof lowsym
+vi lowsym (change symmetry operation number to 1, it's the second line of the file)
+run cub (remember to select lowsym file instead of default symcof and say "no" to message ...add time-reversal...while running and also use same set of points)
+cd ../link_spts new_kpoint
+{extra: in data file change integration scheme, use zero (0) at line 10 of data file } 
+
+The green.inp file is also required. We can use the shell script provided at https://github.com/ykvashnin/rspt-tutorial/blob/main/7/init_jijs.sh 
+
+Then single rspt run.
